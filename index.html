@@ -1,0 +1,39 @@
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Signature Automatique de Documents PDF</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="header">
+			<h1>Signature Automatique de Documents PDF</h1>
+		</header>
+
+		<section class="upload-section">
+			<h2>Téléchargez vos documents PDF</h2>
+			<input type="file" id="pdfFiles" accept="application/pdf">
+			<p id="file-name"></p>
+			<button id="signButton">Signer les documents</button>
+		</section>
+
+		<section class="preview-section">
+			<h2>Prévisualisation du PDF</h2>
+			<canvas id="pdfPreview"></canvas>
+		</section>
+
+		<section class="action-buttons">
+			<h2>Télécharger les documents signés</h2>
+			<a id="downloadLink" href="#" download> Télécharger le PDF signé</a>
+			<button id="emailButton">Envoyer par email</button>
+			<button id="printButton">Imprimer</button>
+		</section>
+
+		<footer>
+			<p>© 2024 Application de Signature Automatique. Tous droits réservés.</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+	</html>
